@@ -13,7 +13,12 @@ def fibonacci_number_naive(n):
 def fibonacci_number(n):
     assert 0 <= n <= 45
 
-    type here
+    lst = [0, 1]
+    i = 2
+    while i <= n:
+        lst.append(lst[i - 1] + lst[i - 2])
+        i += 1
+    return lst[n]
 
 
 if __name__ == '__main__':
