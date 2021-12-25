@@ -16,18 +16,21 @@ def last_digit_of_the_sum_of_squares_of_fibonacci_numbers_naive(n):
     return sum([f ** 2 for f in fibonacci_numbers]) % 10
 
 
-def last_digit_of_the_sum_of_squares_of_fibonacci_numbers(n):
-    assert 0 <= n <= 10 ** 18
-
-    remainder = n % 60
+def last_digit_of_fibonacci_number(n):
+    n %= 60
     f0 = 0
     f1 = 1
     lst = [f0, f1]
     i = 2
-    while i <= remainder:
+    while i <= n:
         lst.append(lst[i-2] + lst[i-1])
         i += 1
-    return lst[remainder] * lst[remainder-1] % 10
+    return lst[n] % 10
+
+def last_digit_of_the_sum_of_squares_of_fibonacci_numbers(n):
+    assert 0 <= n <= 10 ** 18
+
+    return last_digit_of_fibonacci_number(n) * last_digit_of_fibonacci_number(n + 1) % 10
 
 
 if __name__ == '__main__':

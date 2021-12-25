@@ -3,8 +3,8 @@ files:
 - name: last_digit_of_the_sum_of_fibonacci_numbers_again.py
   visible: true
   placeholders:
-  - offset: 608
-    length: 203
+  - offset: 1333
+    length: 315
     placeholder_text: type here
     initial_state:
       length: 9
@@ -122,5 +122,5 @@ status: Unchecked
 feedback:
   message: Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-2-algorithmic-warm-up/submission">submit
     to Coursera</a>
-  time: Sat, 18 Dec 2021 16:43:34 UTC
+  time: Sat, 25 Dec 2021 02:56:20 UTC
 record: -1
