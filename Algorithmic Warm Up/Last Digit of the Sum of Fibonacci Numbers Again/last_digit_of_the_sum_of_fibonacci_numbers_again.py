@@ -42,8 +42,7 @@ def fibonacci_number_again(n, m):
     return curr % m
 
 def last_digit_of_fibonacci_number(n):
-    assert 0 <= n <= 10 ** 7
-
+    n %= 60
     f0 = 0
     f1 = 1
     lst = [f0, f1]
