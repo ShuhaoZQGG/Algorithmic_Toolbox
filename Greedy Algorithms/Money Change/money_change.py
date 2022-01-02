@@ -3,7 +3,16 @@
 
 def money_change(money):
     assert 0 <= money <= 10 ** 3
-    type here
+    count = 0
+    while money > 0:
+        if money >= 10:
+            money -= 10
+        elif money >= 5:
+            money -= 5
+        elif money >= 1:
+            money -= 1
+        count += 1
+    return count
 
 
 if __name__ == '__main__':
